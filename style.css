@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    background:#0b0b0f;
+    color:white;
+}
+
+/* DARK ROMANTIC BACKGROUND */
+.bg-love{
+    background: radial-gradient(circle at top,#1a001f,#000000);
+    min-height:100vh;
+}
+
+/* CENTER */
+.center-box{
+    padding-top:120px;
+    text-align:center;
+}
+
+/* BUTTON */
+.btn-love{
+    background:linear-gradient(45deg,#ff0057,#ff4d88);
+    border:none;
+    padding:12px 30px;
+    color:white;
+    border-radius:30px;
+    transition:0.3s;
+}
+.btn-love:hover{
+    transform:scale(1.1);
+}
+
+/* HEART RAIN */
+.heart{
+    position:fixed;
+    top:-10px;
+    color:#ff2e63;
+    animation:fall linear infinite;
+    z-index:999;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(100vh);
+    }
+}
+
+/* GALLERY */
+.gallery-img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery-img:hover{
+ transform:scale(1.1);
+ box-shadow:0 10px 25px rgba(255,0,90,0.6);
+}
+
+/* GIFT BOX */
+.gift-box{
+    width:150px;
+    cursor:pointer;
+    animation:shake 1s infinite;
+}
+
+@keyframes shake{
+    0%{transform:rotate(0deg);}
+    50%{transform:rotate(5deg);}
+    100%{transform:rotate(0deg);}
+}
+
+/* POPUP MEMORY */
+.memory-popup{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#111;
+    padding:15px;
+    border-radius:10px;
+    display:none;
+    box-shadow:0 0 20px rgba(255,0,90,0.5);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .center-box{padding-top:80px;}
+}
+
+/* ANGRY SHAKE EFFECT */
+.angry-shake{
+    animation:shakeScreen 0.4s linear 3;
+}
+
+@keyframes shakeScreen{
+    0%{transform:translate(5px,5px);}
+    25%{transform:translate(-5px,5px);}
+    50%{transform:translate(5px,-5px);}
+    75%{transform:translate(-5px,-5px);}
+    100%{transform:translate(0,0);}
+}
+
+.angry-text{
+    color:#ff2e63;
+    font-weight:bold;
+}
+
+
+.gallery-img{
+    width: 100%;
+    height: fit-content;
+}
+
+.gallery-img1{
+    width: 40%;
+    height: 100%;
+}
